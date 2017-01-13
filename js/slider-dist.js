@@ -1,0 +1,1 @@
+function defineSize(){$("#slide_form .slide").each(function(i,e){$(e).css({"background-image":"url(img/slide"+(i+1)+")",height:1.1*$("#slide_form").width()+"px",width:$("#slide_form").width+"px"})})}$(document).ready(function(){defineSize()});

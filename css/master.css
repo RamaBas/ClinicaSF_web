@@ -1,0 +1,236 @@
+header{
+  width: 100%;
+  background-color: #F3F1F2;
+  padding: 0px;
+  margin: 0px;
+}
+body{
+  padding: 0px;
+  margin: 0px;
+  background-color: #F3F1F2;
+}
+
+
+/* TOP HEADER  ## LOGOTYPE ## */
+#top_header{
+  width: 100%;
+  height: 7em;
+  display: inline-block;
+}
+#logo{
+  height: 100%;
+  width: 28%;
+  display: inline-block; /*Para mantener info en Header*/
+}
+#logo p{
+  text-align:;
+  display: inline-block;
+  padding-top: 10px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 200;
+  font-size: 1.2em;
+  color:#c2bebe;
+}
+#logo span{
+  display: block;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 900;
+  font-size:1.5em;
+  color:#7ECEC9;
+}
+.subt{
+  display: none;
+  color:#c2bebe !important;
+  font-size: 12px !important;
+  font-family: 'Nunito Sans', sans-serif !important;
+  font-weight: 200 !important;
+}
+#top_header #logo img{
+  float:left;
+  padding: 6px;
+  margin-left:40px;
+  height: 100px;
+  width: 100px;
+}
+#top_header #contact_header{
+  float:right;
+  display: inline-block;
+}
+
+
+
+/* TOP HEADER ## CONTACT  INFO  ## */
+#contact_header{
+  padding: 30px 40px;
+}
+#contact_header span[class^="entypo"]{
+  color: #c2bebe;
+  font-size: 32px;
+}
+#contact_header p{
+  float:right;
+  margin:0px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color:#c2bebe;
+  padding-left:10px;
+  padding-top:5px;
+}
+#contact_header p span{
+  display: block;
+  color: #7ECEC9;
+  font-weight: 200;
+}
+
+
+
+/*  BOTTOM HEADER */
+#bottom_header nav{
+  width: 100%;
+  height:2.6em;
+  background-color: #7ECEC9;
+}
+#bottom_header nav ul{
+ list-style: none;
+}
+/* MENU Btn */
+#bottom_header #menu{
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  margin-left: 50px;
+}
+#bottom_header #menu_item{
+    display: inline-block;
+}
+#menu_item a{
+  display: block;
+  padding: 12px ;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size:1em;
+  color: #fff;
+}
+#menu_item a:hover{
+  background-color: #4AA39B;
+}
+
+
+
+/*Social Btn*/
+#bottom_header #social{
+  margin: 0px 2em;
+}
+#bottom_header #social_item{
+  float:right;
+  padding: .6em;
+}
+#social_item a{
+  text-decoration: none;
+  color: #fff;
+  font-size:14px;
+}
+
+
+/* SLIDER SHOW */
+#slide_form{
+  width: 100%;
+  background-color: #c3c3c3;
+  position: relative;
+}
+.slide{
+  width: 100%;
+  height:200px;
+}
+.slide img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right:0px;
+  top:0px;
+  opacity: 0;
+  text-align: left;
+}
+
+.right , .left{
+  position: absolute;
+  top:50%;
+  font-size: 2em;
+  border:none;
+  color: #7ECEC9;
+}
+.right{
+  right:0px;
+}
+.left{
+  left:0px;
+}
+.right:hover , .left:hover{
+  font-weight: 900;
+}
+
+/* POST ABOUT */
+#post{
+  padding-top: 30px;
+  width: 90%;
+  display: inline-block;
+  margin-left: 10%;
+}
+#post img{
+  float:left;
+  width: 25%;
+  border-radius: 50%;
+}
+article #post_content{
+  margin: 5% 35%;
+  width: 50%;
+  font-family: 'PT Sans', sans-serif;
+  color: #222220;
+}
+#post_content .title{
+  font-size: 24px;
+}
+#post_content span{
+  font-family: 'PT Sans Bold', sans-serif;
+  color: #000;
+}
+
+
+/* STATES */
+#state{
+  margin-top: 3%;
+  width: 100%;
+  max-height: 150px;
+  text-align: center;
+  padding: 35px 0px;
+  background-color: #7ECEC9;
+}
+#state .state_item{
+  color:#fff;
+  display: inline-block;
+  padding: 15px 5%;
+}
+#state .state_item span{
+  display: block;
+}
+.state_item span[class^="entypo"]{
+  font-size: 40px;
+}
+.state_item span{
+  font-size:21px;
+}
+.state_item p{
+  font-size: 18px;
+  font-weight: 300;
+}
+
+/* FOOTER */
+
+footer{
+  width: 100%;
+  background-color:#2d2d2d;
+  color:#fff;
+}
