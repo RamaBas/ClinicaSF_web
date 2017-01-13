@@ -42,16 +42,19 @@ function defineSize(){
   }
   function move(action){
     var lim = $(arr_slide).length-1;
+    var oldPos;
     if (action === 'right'){
-      $(arr_slide[currentPos].children).css({'opacity':'0'});
+      oldPos=currentPos;
       currentPos= currentPos>=lim? currentPos=0 : ++currentPos;
       console.log(currentPos);
-      $(arr_slide[currentPos].children).animate({'opacity':'1'});
+      $(arr_slide[currentPos].children).animate({'opacity':'1'},1000);
+      $(arr_slide[oldPos].children).animate({'opacity':'0'},1000); // blind
     }else{
-      $(arr_slide[currentPos].children).css({'opacity':'0'}); //invisible
+      oldPos=currentPos;
       currentPos= currentPos<=0? currentPos=lim : --currentPos;
       console.log(currentPos);
-      $(arr_slide[currentPos].children).animate({'opacity':'1'});
+      $(arr_slide[currentPos].children).animate({'opacity':'1'},1000);
+      $(arr_slide[oldPos].children).animate({'opacity':'0'},1000); //blind
     }
   }
 })();
